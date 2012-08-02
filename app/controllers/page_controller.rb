@@ -1,27 +1,18 @@
 
 require 'rss'
 require 'open-uri'
+require 'feedzirra'
 class PageController < ApplicationController
 
 	def index
-		@feeds = read
+		@feeds = read_feed_zirra
 	end
 
+private
 
-	def read
-		rss_feed = "http://news.google.com/news?q=apple&output=rss"
-		rss_content = ""
-
-		open(rss_feed) do |f|
-		   rss_content = f.read
-		end
-
-		rss = RSS::Parser.parse(rss_content, false)
-		puts "Title: #{rss.channel.title}"
-		puts "RSS URL: #{rss.channel.link}"
-		puts "Total entries: #{rss.items.size}"
-
-		rss.items.collect { |item| item.description.gsub(/(<[^>]*>)|\n|\t/s," ")}
+	def read_feed_zirra
+		feed = Feedzirra::Feed.fetch_and_parse("http://news.google.com/news?q=apple&output=rss")
+		feed.entries.collect { |entry| entry.summary }
 	end
 end
 
