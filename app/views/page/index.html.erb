@@ -1,3 +1,9 @@
-<% @feeds.each do |feed| %>
-	<%=feed.html_safe%>
+<% @feeds.each_with_index do |feed,index| %>
+	<% if index == 0%>
+		<%= image_tag('/assets/1.jpeg') %>
+  <% elsif (index != @feeds.size-1) %>
+		<%=feed.html_safe%>
+	<% else %>
+		<%= image_tag('/assets/6.jpg') %>
+	<% end %>	
 <%end%>
