@@ -21,7 +21,7 @@
 	box-shadow:0 0 20px rgba(0,0,0,0.2);
 }
 
-.magazine1 .even .gradient{
+.magazine1 .odd .gradient{
 	position:absolute;
 	top:0;
 	left:0;
@@ -35,7 +35,7 @@
 	background-image:linear-gradient(left, rgba(0,0,0,0) 95%, rgba(0,0,0,0.2) 100%);
 }
 
-.magazine1 .odd .gradient{
+.magazine1 .even .gradient{
 	position:absolute;
 	top:0;
 	left:0;
