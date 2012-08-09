@@ -12,6 +12,8 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require turn
+//= require hash
 //= require_tree .
 
 $(window).ready(function() {
