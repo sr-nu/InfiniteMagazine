@@ -27,7 +27,7 @@ body, ul, table, form{
 /*  #Mobile (Portrait)
 	Note: Design for a width of 320px
 */
-/*
+
  @media only screen and (max-width: 767px) {
 	.bookshelf{
 		display:none;
@@ -149,7 +149,7 @@ body, ul, table, form{
 	}
 	
 }
-*/
+
 
 /*	#Mobile (Landscape)
 	Note: Design for a width of 480px
