@@ -19,8 +19,8 @@ body{
 	background:#352929;
 }
 #magazine{
-	width:1152px;
-	height:752px;
+	width:1024px;
+	height:668px;
 	border:1px
 }
 #magazine .turn-page{
@@ -29,8 +29,8 @@ body{
 
 
 #magazine .page{
-	width:576px;
-	height:752px;
+	width:512px;
+	height:668px;
 
 	background-color: #fff;
 	-webkit-box-shadow:0 0 20px rgba(0,0,0,0.2);
