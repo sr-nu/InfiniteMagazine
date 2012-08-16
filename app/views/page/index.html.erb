@@ -1,14 +1,14 @@
 <%= image_tag('/assets/1.jpeg') %>
 <% @feeds.each_slice(2).each_with_index do |feed, index| %>
-	<div class="page-wrapper <%= index.odd? ? 'odd' : 'even' %>" page="<%=index+1%>" style="position: absolute; overflow: hidden; width: 461px; height: 600px; top: 0px; <%= cycle('left', 'right') %>: 0px; <%= cycle('right', 'left') %>: auto; z-index: 12;">
-	   <div style="position: absolute; top: 0px; left: 0px; overflow: hidden; z-index: auto; width: 500px; height: 600px; -moz-transform-origin: 100% 0%;">
-	      <div style="float: left; width: 461px; height: 600px; position: absolute; top: 0px; left: 0px; bottom: auto; right: auto; -moz-transform-origin: 0% 0%;" class="page p2">
+	<div class="page-wrapper <%= index.odd? ? 'odd' : 'even' %>" page="<%=index+1%>" style="<%= cycle('left', 'right') %>: 0px; <%= cycle('right', 'left') %>: auto;">
+	   <div class="page-wrapper-page">
+	      <div class="page p2">
 							 <%=feed[0].html_safe%> <br/>
 							 <%=feed[1].html_safe%>
 	      </div>
 	   </div>
 	   <div class="gradient"></div>
-	   <div style="top: 0px; left: 0px; overflow: hidden; z-index: 1; width: 461px; height: 600px;"></div>
+	   <div class=".end-div"></div>
 	</div>
 <%end%>
 <%= image_tag('/assets/6.jpg') %>
