@@ -31,7 +31,6 @@ body{
 #magazine .page{
 	width:512px;
 	height:668px;
-
 	background-color: #fff;
 	-webkit-box-shadow:0 0 20px rgba(0,0,0,0.2);
 	-moz-box-shadow:0 0 20px rgba(0,0,0,0.2);
@@ -40,13 +39,19 @@ body{
 	box-shadow:0 0 20px rgba(0,0,0,0.2);
 }
 
-.even .gradient{
+
+.gradient{
 	position:absolute;
 	top:0;
 	left:0;
 	width:100%;
 	height:100%;
 	z-index:12;
+	pointer-events:none;
+}
+
+
+.even .gradient{
 	background:-webkit-gradient(linear, left top, right top, color-stop(0.95, rgba(0,0,0,0)), color-stop(1, rgba(0,0,0,0.2)));
 	background-image:-webkit-linear-gradient(left,rgba(0,0,0,0) 95%, rgba(0,0,0,0.2) 100%);
 	background-image:-moz-linear-gradient(left, rgba(0,0,0,0) 95%, rgba(0,0,0,0.2) 100%);
@@ -56,12 +61,6 @@ body{
 }
 
 .odd .gradient{
-	position:absolute;
-	top:0;
-	left:0;
-	width:100%;
-	height:100%;
-	z-index:12;
 	background:-webkit-gradient(linear, right top, left top, color-stop(0.95, rgba(0,0,0,0)), color-stop(1, rgba(0,0,0,0.15)));
 	background-image:-webkit-linear-gradient(right,rgba(0,0,0,0) 95%, rgba(0,0,0,0.15) 100%);
 	background-image:-moz-linear-gradient(right, rgba(0,0,0,0) 95%, rgba(0,0,0,0.15) 100%);
@@ -70,47 +69,6 @@ body{
 	background-image:linear-gradient(right, rgba(0,0,0,0) 95%, rgba(0,0,0,0.15) 100%);
 }
 
-/*
-.page-wrapper {
-	position: absolute; 
-	overflow: hidden; 
-	width: 461px; 
-	height: 600px; 
-	top: 0px;
-	z-index: 12;
-}*/
-
-/*.page-wrapper .page-wrapper-page{
-	position: absolute; 
-	top: 0px; 
-	left: 0px; 
-	overflow: hidden; 
-	z-index: auto; 
-	width: 500px; 
-	height: 600px; 
-	-moz-transform-origin: 100% 0%;
-}*/
-
-/*.page {
-	float: left; 
-	width: 461px; 
-	height: 600px; 
-	position: absolute; 
-	top: 0px; 
-	left: 0px; 
-	bottom: auto; 
-	right: auto; 
-	-moz-transform-origin: 0% 0%;
-}*/
-
-/*.end-div {
-	top: 0px; 
-	left: 0px; 
-	overflow: hidden; 
-	z-index: 1; 
-	width: 461px; 
-	height: 600px;
-}*/
 .turnjs-slider{
 	width:600px;
 	height:8px;
