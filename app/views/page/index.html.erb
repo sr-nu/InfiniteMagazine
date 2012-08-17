@@ -3,8 +3,9 @@
 	<div class="page-wrapper <%= index.odd? ? 'odd' : 'even' %>" page="<%=index+1%>" style="<%= cycle('left', 'right') %>: 0px; <%= cycle('right', 'left') %>: auto;">
 	   <div class="page-wrapper-page">
 	      <div class="page p2">
-							 <%=feed[0].html_safe%> <br/>
-							 <%=feed[1].html_safe%>
+	      	<% feed.each do |f| %>
+						<%=f.html_safe%> <br/>
+					<% end %>
 	      </div>
 	   </div>
 	   <div class="gradient"></div>

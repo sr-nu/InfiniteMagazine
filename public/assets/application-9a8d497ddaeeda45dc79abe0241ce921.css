@@ -15,9 +15,24 @@
 
 
 
-body{
-	background:#352929;
+body {
+	background-color: #352929;
 }
+
+
+body ul li
+{
+	font-family:Helvetica, Arial, sans-serif;
+	color: #858282;
+}
+
+/*
+.lh a:link :first-child{ color:#858282; text-decoration:none; font-size: 8pt;}
+.lh a:visited :first-child{ color:#858282; text-decoration:none;  font-size: 8pt;}
+.lh a:hover :first-child{ color:#858282; text-decoration:underline;  font-size: 8pt;}
+.lh a:active :first-child{ color:#858282; text-decoration:none;  font-size: 8pt;}
+*/
+
 #magazine{
 	width:1024px;
 	height:668px;
