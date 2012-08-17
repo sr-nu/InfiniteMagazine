@@ -30,7 +30,8 @@ body{
 #magazine .page{
 	width:512px;
 	height:668px;
-	background-color: #fff;
+	/*background-color: #fff;*/
+	background-image: url('cream.jpeg');
 	-webkit-box-shadow:0 0 20px rgba(0,0,0,0.2);
 	-moz-box-shadow:0 0 20px rgba(0,0,0,0.2);
 	-ms-box-shadow:0 0 20px rgba(0,0,0,0.2);
